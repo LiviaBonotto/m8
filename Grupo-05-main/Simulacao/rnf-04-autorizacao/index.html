@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacao RNF-04</title>
+    <script src="./index.js"></script>
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        html,
+        * {
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 70%;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container p {
+            width: 50%;
+        }
+
+        .form {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            padding: 16px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .form-group p {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin-bottom: 16px;
+        }
+
+        .form-group input.error {
+            border-color: red;
+        }
+
+        .button {
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            background-color: #1e90ff;
+            color: #fff;
+            padding: 16px 32px;
+            font-weight: bold;
+            cursor: pointer;
+        }        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simulação RNF-04</h1>
+        <p style="text-align: center;">O sistema deve garantir que os dados sejam protegidos contra acesso não autorizado. Para isso deve ser
+            permitido apenas o acesso por meio das credenciais institucionais da Meta.</p>
+        <hr/>
+
+        <div class="form">
+            <h1 class="title">
+                Login</h1>
+            <div class="form-group">
+                <p>Email:</p>
+                <input type="text" id="email" placeholder="you@meta.com" />
+            </div>
+
+            <div class="form-group">
+                <p>Senha:</p>
+                <input type="password" id="password" placeholder="********" />
+            </div>
+
+            <button class="button" onclick="login()">Entrar</button>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            const emailInput = document.getElementById("email");
+            const passwordInput = document.getElementById("password");
+
+            if (emailInput.value === "") {
+                emailInput.classList.add("error");
+            } else {
+                if (!emailInput.value.includes("@meta.com")) {
+                    alert("Email inválido! Apenas emails institucionais da Meta são permitidos.");
+                }
+
+                emailInput.classList.remove("error");
+            }
+
+            if (passwordInput.value === "") {
+                passwordInput.classList.add("error");
+            } else {
+                passwordInput.classList.remove("error");
+            }
+
+            if (
+                emailInput.value == "marcelo@meta.com" &&
+                passwordInput.value == "123456"
+            ) {
+                alert("Login realizado com sucesso! Usuário: " + emailInput.value + " autorizado.");
+            } else {
+                alert("Login não realizado! Usuário: " + emailInput.value + " não autorizado ou senha errada.");
+            }
+        }
+    </script>
+</body>
+
+</html>
