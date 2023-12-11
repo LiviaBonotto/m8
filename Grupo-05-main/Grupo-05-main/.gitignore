@@ -1,0 +1,13 @@
+# Ignore .DS_Store files wherever they may be
+.DS_Store
+*.DS_Store
+**/.DS_Store
+.DS_Store
+Novo/src/app/verse/node_modules
+Novo/src/app/server/venv/
+.DS_Store
+Novo/src/app/verse/yarn.lock
+src/backend/node_modules/
+.env
+.venv
+src/backend/node_modules/

@@ -1,0 +1,172 @@
+{
+    "numFailedTestSuites": 0,
+    "numFailedTests": 0,
+    "numPassedTestSuites": 1,
+    "numPassedTests": 8,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 8,
+    "openHandles": [],
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesRemovedList": [],
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeysByFile": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1701037997416,
+    "success": true,
+    "testResults": [
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "JWT Service",
+                        "Generate Token"
+                    ],
+                    "duration": 4,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "JWT Service Generate Token should return a token for a valid payload",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "should return a token for a valid payload"
+                },
+                {
+                    "ancestorTitles": [
+                        "JWT Service",
+                        "Generate Token"
+                    ],
+                    "duration": 2,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "JWT Service Generate Token should return a different token for different payloads",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "should return a different token for different payloads"
+                },
+                {
+                    "ancestorTitles": [
+                        "JWT Service",
+                        "Verify Token"
+                    ],
+                    "duration": 2,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "JWT Service Verify Token should return decoded token for valid token",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "should return decoded token for valid token"
+                },
+                {
+                    "ancestorTitles": [
+                        "JWT Service",
+                        "Verify Token"
+                    ],
+                    "duration": 0,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "JWT Service Verify Token should return null for invalid token",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "should return null for invalid token"
+                },
+                {
+                    "ancestorTitles": [
+                        "JWT Service",
+                        "Verify Token"
+                    ],
+                    "duration": 1,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "JWT Service Verify Token should return null for empty token",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "should return null for empty token"
+                },
+                {
+                    "ancestorTitles": [
+                        "JWT Service",
+                        "Verify Token"
+                    ],
+                    "duration": 0,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "JWT Service Verify Token should return null for invalid token",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "should return null for invalid token"
+                },
+                {
+                    "ancestorTitles": [
+                        "JWT Service",
+                        "Verify Token"
+                    ],
+                    "duration": 0,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "JWT Service Verify Token should throw an error for malformed token",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "should throw an error for malformed token"
+                },
+                {
+                    "ancestorTitles": [
+                        "JWT Service",
+                        "Verify Token"
+                    ],
+                    "duration": 2,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "JWT Service Verify Token should return null for token signed with wrong secret",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "should return null for token signed with wrong secret"
+                }
+            ],
+            "endTime": 1701037998798,
+            "message": "",
+            "name": "/Users/marcelofeitoza/development/grupo-05-mod-08/src/backend/src/tests/jwtService.test.ts",
+            "startTime": 1701037997456,
+            "status": "passed",
+            "summary": ""
+        }
+    ],
+    "wasInterrupted": false
+}
